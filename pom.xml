@@ -30,10 +30,11 @@
 
     <modules>
         <!--module>pegacorn-fhirplace</module -->
-        <module>../pegacorn-deployment-properties</module>
-        <module>../pegacorn-references-library</module>
+        <module>../pegacorn-deployment</module>
+        <module>../pegacorn-common</module>
         <module>../pegacorn-communicate</module>
-        <module>../pegacorn-ladon</module>
+<!--        <module>../pegacorn-ladon</module> -->
+<!--        <module>../pegacorn-mimic</module> -->
     </modules>
 
     <scm>
@@ -43,7 +44,7 @@
 
     <properties>
        
-        <version-ca.uhn.hapi.fhir>4.0.1</version-ca.uhn.hapi.fhir>
+        <version-ca.uhn.hapi.fhir>4.2.0</version-ca.uhn.hapi.fhir>
                 
         <version-io.netty>4.1.47.Final</version-io.netty>
                 
@@ -64,7 +65,7 @@
         <version-org.eclipse.jetty.plugin-9>9.4.12.v20180830</version-org.eclipse.jetty.plugin-9>
         <version-org.eclipse.maven.plugin>3.1.0</version-org.eclipse.maven.plugin>
 
-        <version-org.infinispan>9.0.3.Final</version-org.infinispan>
+        <version-org.infinispan>10.1.5.Final</version-org.infinispan>
         
         <version-org.json>20190722</version-org.json>
                 
@@ -125,7 +126,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>${version-org.apache.maven.plugin}</version>
+                    <version>${version-org.apache.maven.compiler.plugin}</version>
                     <configuration>
                         <source>1.8</source>
                         <target>1.8</target>
